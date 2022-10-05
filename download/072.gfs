@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:Amtliche_Hauskoordinaten="https:srvags03:6443/arcgis/services/public/Amtliche_Hauskoordinaten_wfs/MapServer/WFSServer" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:gml="http://www.opengis.net/gml/3.2" targetNamespace="https:srvags03:6443/arcgis/services/public/Amtliche_Hauskoordinaten_wfs/MapServer/WFSServer" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xsd:import namespace="http://www.opengis.net/gml/3.2" schemaLocation="http://schemas.opengis.net/gml/3.2.1/gml.xsd"/>
+<xsd:element name="Hauskoordinaten" type="Amtliche_Hauskoordinaten:HauskoordinatenFeatureType" substitutionGroup="gml:AbstractFeature"/>
+<xsd:complexType name="HauskoordinatenFeatureType">
+  <xsd:complexContent>
+    <xsd:extension base="gml:AbstractFeatureType">
+      <xsd:sequence>
+        <xsd:element minOccurs="0" maxOccurs="1" name="OBJECTID" type="xsd:int"/>
+        <xsd:element minOccurs="0" maxOccurs="1" name="STRSCHL" nillable="true" type="xsd:double"/>
+        <xsd:element minOccurs="0" maxOccurs="1" name="HSNR" nillable="true" type="xsd:double"/>
+        <xsd:element minOccurs="0" maxOccurs="1" name="HSNRZU" nillable="true">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="20"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element minOccurs="0" maxOccurs="1" name="STRNAME" nillable="true">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="255"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element minOccurs="0" maxOccurs="1" name="ADRESSE" nillable="true">
+          <xsd:simpleType>
+            <xsd:restriction base="xsd:string">
+              <xsd:maxLength value="255"/>
+            </xsd:restriction>
+          </xsd:simpleType>
+        </xsd:element>
+        <xsd:element minOccurs="0" maxOccurs="1" name="Y" nillable="true" type="xsd:double"/>
+        <xsd:element minOccurs="0" maxOccurs="1" name="X" nillable="true" type="xsd:double"/>
+        <xsd:element minOccurs="0" maxOccurs="1" name="SHAPE" nillable="true" type="gml:PointPropertyType"/>
+      </xsd:sequence>
+    </xsd:extension>
+  </xsd:complexContent>
+</xsd:complexType>
+</xsd:schema>

@@ -1,0 +1,10 @@
+Datensatz: Amtliche Hauskoordinaten
+Quelle: FB 62 - Amt für Geoinformation, Vermessung und Kataster
+Lizenz: Datenlizenz Deutschland – Namensnennung – Version 2.0" (dl-de/by-2-0), www.govdata.de/dl-de/by-2-0
+
+OpenData-Portal: https://opendata.essen.de/dataset/amtliche-hauskoordinaten
+Ressource: https://geo.essen.de/arcgis/services/public/Amtliche_Hauskoordinaten_wfs/MapServer/WFSServer?request=GetCapabilities&service=WFS
+Metadaten-Bezeichner: 7cb8c7c0-4a7a-4059-9960-e0097d1e19e1
+
+Abruf: 2022-10-05
+Stand: 2022-08-22
